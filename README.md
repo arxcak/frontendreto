@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Crypto List es una aplicación Angular que muestra información detallada sobre las principales criptomonedas utilizando la API de CoinGecko. La aplicación incluye una tabla interactiva que presenta datos como precios, cambios porcentuales, volumen, capitalización de mercado y más.
+Crypto List es una aplicación Angular que muestra información detallada sobre las principales criptomonedas utilizando la API de CoinGecko. La aplicación incluye una tabla que presenta datos como precios, cambios porcentuales, volumen, capitalización de mercado y más.
 
 ## Características
 
@@ -17,19 +17,6 @@ Crypto List es una aplicación Angular que muestra información detallada sobre 
 - **Bootstrap**: Para el diseño responsivo y estilización de la interfaz.
 - **CoinGecko API**: Fuente de datos para las criptomonedas.
 - **TypeScript**: Lenguaje de programación utilizado en el desarrollo.
-
-# Crypto List
-
-## Descripción
-
-Crypto List es una aplicación Angular que muestra información detallada sobre las principales criptomonedas utilizando la API de CoinGecko. La aplicación incluye una tabla interactiva que presenta datos como precios, cambios porcentuales, volumen, capitalización de mercado y más.
-
-## Características
-
-- **Listado de criptomonedas**: Muestra información detallada de las principales criptomonedas.
-- **Datos en tiempo real**: Los datos se obtienen de la API de CoinGecko.
-- **Interfaz interactiva**: Tabla con diseño responsivo y visualización clara de los datos.
-- **Filtros y ordenación**: Posibilidad de agregar funcionalidades adicionales como filtros y ordenación en el futuro.
 
 ## Tecnologías utilizadas
 
