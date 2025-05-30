@@ -1,0 +1,81 @@
+<div class="container mt-4">
+  <h1 class="mb-4">Top Cryptocurrencies (USD)</h1>
+  
+  <div *ngIf="isLoading" class="text-center py-4">
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <div class="table-responsive" *ngIf="!isLoading">
+    <table class="table table-striped table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th>#</th>
+          <th>Coin</th>
+          <th>Price (USD)</th>
+          <th>24h Change</th>
+          <th class="text-end">Market Cap</th>
+          <th class="text-end">Market Cap Rank</th>
+          <th class="text-end">24h Change (USD)</th>
+          <th class="text-end">Price change percentage 24h</th>
+          <th class="text-end">last updated</th>
+          <th class="text-end">fully diluted valuation</th>
+          <th class="text-end">total volume</th>
+          <th class="text-end">high 24h</th>
+          <th class="text-end">low 24h</th>
+          <th class="text-end">market cap change 24h</th>
+          <th class="text-end">market cap change percentage 24h</th>
+          <th class="text-end">circulating supply</th>
+          <th class="text-end">total supply</th>
+          <th class="text-end">max supply</th>
+          <th class="text-end">ath</th>
+          <th class="text-end">ath change percentage</th>
+          <th class="text-end">ath date</th>
+          <th class="text-end">atl</th>
+          <th class="text-end">atl change percentage</th>
+          <th class="text-end">atl date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let crypto of cryptos">
+          <td>{{ crypto.market_cap_rank }}</td>
+          <td>
+            <div class="d-flex align-items-center">
+              <img [src]="crypto.image" alt="{{ crypto.name }}" 
+                   style="width: 30px; height: 30px; margin-right: 10px;">
+              <div>
+                <strong>{{ crypto.name }}</strong>
+                <div class="text-muted text-uppercase">{{ crypto.symbol }}</div>
+              </div>
+            </div>
+          </td>
+          <td>{{ formatPrice(crypto.current_price) }}</td>
+          <td [class]="getPriceChangeClass(crypto.price_change_percentage_24h)">
+            {{ crypto.price_change_percentage_24h.toFixed(2) }}%
+          </td>
+          <td class="text-end">{{ crypto.market_cap }}</td>
+          <td class="text-end">{{ crypto.market_cap_rank }}</td>
+          <td class="text-end">{{ crypto.price_change_24h }}</td>
+          <td class="text-end">{{ crypto.price_change_percentage_24h }}</td>
+          <td class="text-end">{{ crypto.last_updated | date:'short' }}</td>
+          <td class="text-end">{{ crypto.fully_diluted_valuation }}</td>
+          <td class="text-end">{{ crypto.total_volume }}</td>
+          <td class="text-end">{{ crypto.high_24h }}</td>
+          <td class="text-end">{{ crypto.low_24h }}</td>
+          <td class="text-end">{{ crypto.market_cap_change_24h }}</td>
+          <td class="text-end">{{ crypto.market_cap_change_percentage_24h }}</td>
+          <td class="text-end">{{ crypto.circulating_supply }}</td>
+          <td class="text-end">{{ crypto.total_supply }}</td>
+          <td class="text-end">{{ crypto.max_supply }}</td>
+          <td class="text-end">{{ crypto.ath }}</td>
+          <td class="text-end">{{ crypto.ath_change_percentage }}</td>
+          <td class="text-end">{{ crypto.ath_date | date:'short' }}</td>
+          <td class="text-end">{{ crypto.atl }}</td>
+          <td class="text-end">{{ crypto.atl_change_percentage }}</td>
+          <td class="text-end">{{ crypto.atl_date | date:'short' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

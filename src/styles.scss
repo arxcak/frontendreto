@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+// Configuración inicial de Bootstrap
+@use 'bootstrap/scss/bootstrap' with (
+  $body-bg: null,
+  $body-color: null
+);
+
+// Estilos globales
+body {
+  padding-bottom: 2rem;
+}
+
+.table {
+  th, td {
+    vertical-align: middle;
+  }
+}
+
+.text-success {
+  color: bootstrap.$green !important;
+}
+
+.text-danger {
+  color: bootstrap.$red !important;
+}
