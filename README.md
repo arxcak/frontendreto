@@ -25,17 +25,17 @@ crypto-list/
 ├── src/
 │   ├── app/
 │   │   ├── interfaces/
-│   │   │   └── crypto.ts       # Interfaz para los datos de criptomonedas
+│   │   │   └── crypto.ts
 │   │   ├── services/
-│   │   │   └── crypto.service.ts # Servicio para consumir la API de CoinGecko
+│   │   │   └── crypto.service.ts 
 │   │   ├── crypto-list/
 │   │   │   └── crypto-list/
-│   │   │       ├── crypto-list.component.ts  # Lógica del componente
-│   │   │       ├── crypto-list.component.html # Vista del componente
-│   │   │       └── crypto-list.component.css  # Estilos del componente
-│   ├── app.routes.ts           # Configuración de rutas
-│   ├── app.config.ts           # Configuración de la aplicación
-│   └── main.ts                 # Punto de entrada de la aplicación
+│   │   │       ├── crypto-list.component.ts
+│   │   │       ├── crypto-list.component.html
+│   │   │       └── crypto-list.component.css 
+│   ├── app.routes.ts        
+│   ├── app.config.ts 
+│   └── main.ts                 
 ```
 
 ## Instalación
