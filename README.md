@@ -82,4 +82,4 @@ crypto-list/
 
 ## API utilizada
 
-La aplicación utiliza la API de CoinGecko para obtener datos de criptomonedas. Más información sobre la API (https://api.coingecko.com/api/v3/coins/markets).
+La aplicación utiliza la API de CoinGecko para obtener datos de criptomonedas. (https://api.coingecko.com/api/v3/coins/markets).
