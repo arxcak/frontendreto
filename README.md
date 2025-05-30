@@ -18,13 +18,6 @@ Crypto List es una aplicación Angular que muestra información detallada sobre 
 - **CoinGecko API**: Fuente de datos para las criptomonedas.
 - **TypeScript**: Lenguaje de programación utilizado en el desarrollo.
 
-## Tecnologías utilizadas
-
-- **Angular**: Framework principal para el desarrollo de la aplicación.
-- **Bootstrap**: Para el diseño responsivo y estilización de la interfaz.
-- **CoinGecko API**: Fuente de datos para las criptomonedas.
-- **TypeScript**: Lenguaje de programación utilizado en el desarrollo.
-
 ## Estructura del proyecto
 
 ```
@@ -50,7 +43,7 @@ crypto-list/
 1. Clona el repositorio:
 
    ```bash
-   git clone 
+   git clone https://github.com/arxcak/frontendreto
    cd crypto-list
    ```
 
